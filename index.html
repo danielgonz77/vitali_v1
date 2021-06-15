@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vitali v2</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#dmm').click(function(){
+				$('#desple').toggleClass('active');
+			})
+		});
+	</script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+	<meta charset="utf-8">
+	<meta name="description" content="">
+  	<meta name="keywords" content="">
+</head>
+<body>
+	<header class="main_header">
+		<div class="container">
+			<div class="row">
+				<a href="" class="logo"><img src="img/1x/vitali-footer.png"></a>
+				<div class="right-menu">
+					<button id="dmm" class="menu-button"></button>
+					<div id="desple" class="dropdown-menu-menu">
+						<a href="#main_header">Inicio</a>
+						<a href="#main_header">Servicios</a>
+						<a href="#main_header">Dolencias</a>
+						<a href="#main_header">Contacto</a>
+						<a href="#main_header">Blog</a>
+					</div>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="#main_header">Inicio</a></li>		
+						<li><a href="#main_header">Servicios</a></li>
+						<li><a href="#main_header">Dolencias</a></li>
+						<li><a href="#main_header">Contacto</a></li>
+						<li><a href="#main_header">Blog</a></li>
+						<!--<li><a href="#main_header">Dolencias</a></li>
+						<li><a href="#main_header">Contacto</a></li>
+						<li><a href="#main_header">Blog</a></li>-->
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<section class="home-slider">
+		<div class="slider">
+			<div class="slide active" style="background-image: url('./img/1x/Transparencia_1.png'); background-repeat: no-repeat; background-size: cover;">
+				<div class="content-slide" >
+					<h2>Vitalí más que un Spa...<br>un IntraSpa.</h2>
+					<p><br>
+						Vitalí Clínica Spa es un espacio único en la Ciudad de México, que va más allá de lo que un Spa convencional puede ofrecer.<br><br>
+
+						Más que masajes y tratamientos cosmetológicos, nos enfocamos en servicios y experiencias que trascienden lo recreativo; impactamos el bienestar integral del cuerpo físico, mental y emocional, lo que nosotros llamamos, IntraSpa.
+					</p>
+					<button class="btn-reserva">Reserva ahora</button>
+					<button class="btn-contacto">Contáctanos</button>
+				</div>
+			</div>
+
+			<div class="slide" style="background-image: url('./img/1x/Transparencia_1.png'); background-repeat: no-repeat; background-size: cover;">
+				<div class="content-slide" >
+					<h2>Vitalí más que un Spa...<br>un IntraSpa.</h2>
+					<p><br>
+						Vitalí Clínica Spa es un espacio único en la Ciudad de México, que va más allá de lo que un Spa convencional puede ofrecer.<br><br>
+
+						Más que masajes y tratamientos cosmetológicos, nos enfocamos en servicios y experiencias que trascienden lo recreativo; impactamos el bienestar integral del cuerpo físico, mental y emocional, lo que nosotros llamamos, IntraSpa.
+					</p>
+					<button class="btn-reserva">Reserva ahora</button>
+					<button class="btn-contacto">Contáctanos</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- controls  -->
+		<div class="controls">
+			<div class="prev"><</div>
+			<div class="next">></div>
+		</div>
+	
+		<!-- indicators -->
+		<div class="indicator">
+		</div>
+
+		<!-- --------------------------------------------Mobile-->
+		<div class="home-mobile-top">
+			<div class="container">
+				<div class="logo-slide">
+					<img class="logo-verde" src="img/1x/logo_verde.png" alt="logo1">
+				</div>
+				<div class="main-text">
+					<img class="main-text__frase" src="img/1x/texto1.png" alt="logo1">
+				</div>
+				<div class="caption">
+					<p><b>Vitalí Clínica Spa</b> es un espacio único en la Ciudad de México,<br> que va más allá de lo que un Spa convencional puede ofrecer.<br><br>
+						Más que masajes y tratamientos cosmetológicos, nos enfocamos<br> en servicios y experiencias que trascienden lo recreativo;<br>
+						impactamos el bienestar integral del cuerpo físico, 
+						mental y<br> emocional, lo que nosotros llamamos,<b>IntraSpa.</b></p>
+				</div>
+				<div class="btn-conoce">
+					<a href=""><img class="btn-conoce__mas" src="img/1x/Reserva.png" alt="conoce-mas"></a>
+				</div>
+			</div>
+		</div>
+		<!--<div class="swiper-container primero">
+			<div class="swiper-wrapper">
+			  <div class="swiper-slide">
+				<div class="icon-slide">
+					<img class="icon-slide-item" src="img/1x/icon1_slider.png" alt="icon1">
+				</div>
+				<div class="caption">
+					<h1>BIENVENIDOS</h1>
+					<p>A tu llegada te invitamos a realizar una asana de apertura, con<br>la finalidad de que expandas tu cuerpo, puedas sentirlo y respirar<br>mejor. Te ofrecemos un shot de jengibre, directo de nuestro Detox<br>Bar (enlace a Detox BAR), para activar tu sistema digestivo y tu<br>metabolismo, ayudándote a desinflamarte (algo muy común en<br>los estados de estrés), cargándote de energía.
+					</p>
+				</div>
+			  </div>
+			  <div class="swiper-slide">
+				<div class="icon-slide">
+					<img class="icon-slide-item" src="img/1x/icon1_slider.png" alt="icon1">
+				</div>
+				<div class="caption">
+					<h1>BIENVENIDOS</h1>
+					<p>A tu llegada te invitamos a realizar una asana de apertura, con<br>la finalidad de que expandas tu cuerpo, puedas sentirlo y respirar<br>mejor. Te ofrecemos un shot de jengibre, directo de nuestro Detox<br>Bar (enlace a Detox BAR), para activar tu sistema digestivo y tu<br>metabolismo, ayudándote a desinflamarte (algo muy común en<br>los estados de estrés), cargándote de energía.
+					</p>
+				</div>
+			  </div>
+			  <div class="swiper-slide">
+				<div class="icon-slide"> 
+					<img class="icon-slide-item" src="img/1x/icon1_slider.png" alt="icon1">
+				</div>
+				<div class="caption">
+					<h1>BIENVENIDOS</h1>
+					<p>A tu llegada te invitamos a realizar una asana de apertura, con<br>la finalidad de que expandas tu cuerpo, puedas sentirlo y respirar<br>mejor. Te ofrecemos un shot de jengibre, directo de nuestro Detox<br>Bar (enlace a Detox BAR), para activar tu sistema digestivo y tu<br>metabolismo, ayudándote a desinflamarte (algo muy común en<br>los estados de estrés), cargándote de energía.
+					</p>
+				</div>
+			  </div>
+			</div>-->
+			<!-- Add Pagination -->
+			<!--<div class="swiper-pagination t1pag"></div>
+		</div>-->
+		
+	</section>
+	<section class="bienvenido">
+		<div class="logo_bienvenido">
+			<img src="./img/1x/logo_bienvenido.png" alt="">
+		</div>
+		<div class="slider-bienvenido">
+			<div class="img_bienvenido">
+				<img src="./img/1x/binevenido2.png" alt="">
+			</div>
+			<div class="slide-b">
+				<div class="swiper-container bienvenido-swiper" >
+					<div class="swiper-wrapper">
+					  <div class="swiper-slide bienvenido_slide">
+						<div class="b-swiper-block">
+							<h2>BIENVENIDO</h2>
+							<p> A tu llegada te invitamos a realizar una asaña de apertura, con la finalidad de que expandas tu cuerpo, puedas sentirlo y respirar mejor. Te ofrecemos un shot de jengibre, directo de nuestro Detox Bar (enlace a Detox BAR), para activar tu sistema digestivo y tu metabolismo, ayudándote a desinflamarte (algo muy común en los estados de estrés), cargándote de energía.
+								</p>
+						</div>
+					  </div>
+			
+					  <div class="swiper-slide bienvenido_slide">
+						<div class="b-swiper-block">
+							<h2>CONTINÚA</h2>
+							<p>
+								En el área de relajación entrarás en una nueva atmósfera de paz, libre de caos, que invita de manera envolvente a ubicarte en un estado mental de calma.<br><br> 
+
+								Aquí te brindamos un té relajante y nuestras expertas terapeutas te aplican una deliciosa terapia de calor, con mantas y cojines de semillas.
+							</p>
+						</div>
+					  </div>
+			
+					</div>
+					<div class="swiper-button-next bienvenido-button-next"></div>
+					<div class="swiper-button-prev bienvenido-button-prev"></div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination bienvenido-pag"></div>
+				</div>	
+			</div>
+		</div>
+	</section>
+	<section class="servicios-section">
+		<div class="servi-img">
+			<img src="./img/1x/servicios.png" alt="">
+		</div>
+	</section>
+	<section class="reserva-section">
+		<div class="reserva-text">
+			<h2>Healty Beauty</h2>
+			<h3>Comienza tu transformación... de dentro hacia afuera.</h3>
+		</div>
+		<div class="reserva-text">
+			<h2>Masajes holísticos</h2>
+			<h3>¡Te sientes bien, te ves bien!</h3>
+		</div>
+		<div class="reserva-text">
+			<h2>Zona Flow </h2>
+			<h3>Reencuentra tu ser a través de la meditación y el yoga.</h3>
+		</div>
+		<div class="reserva-text">
+			<h2>Wellness Boutique</h2>
+			<h3>Selecciona la herramienta ideal para ti y lleva tu nuevo bienestar a casa.</h3>
+		</div>
+		<div class="reserva-btn">
+			<button class="btn-reserva">Reserva ahora</button>
+		</div>
+		<div class="reserva-btn">
+			<button class="btn-contacto">Horario</button>
+		</div>
+	</section>
+	<section class="slide3">
+		<div class="slide3-content" style="max-width:1200px">
+	
+			<div class="slide3-selection">
+				<div class="slide3-item">
+				<img class="demo" src="./img/1x/s3-1.png" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+				</div>
+				<div class="slide3-item">
+				<img class="demo" src="./img/1x/s3-1_1.png" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+				</div>
+				<div class="slide3-item">
+				<img class="demo" src="./img/1x/s3-3.png" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+				</div>
+				<div class="slide3-item">
+				<img class="demo" src="./img/1x/s3-4.png" style="width:100%;cursor:pointer" onclick="currentDiv(4)">
+				</div>
+				<div class="slide3-item">
+				<img class="demo" src="./img/1x/s3-5.png" style="width:100%;cursor:pointer" onclick="currentDiv(5)">
+				</div>
+			</div>
+		  
+			<div class="mySlides">
+				<div class="s3-item">
+					<img src="./img/1x/s3-1.png" alt="">
+					<h2>Bar Detox</h2>
+				</div>
+				<div class="s3-text">
+					<h2>Bar Detox</h2>
+					<p>Al tomar nuestros servicios de masaje, te ofrecemos un shot de jengibre de bienvenida, que te ayuda a activar y acelerar tu metabolismo a la vez que desinflama todos los músculos tensos.<br><br>
+
+						En Vitalí IntraSpa sabemos que somos lo que comemos y, precisamente por eso, para ayudar a tu cuerpo a alcanzar ese estado de bienestar óptimo, hemos diseñado el Bar Detox Vitalí, en el que te ofreceremos todo tipo de bebidas y snacks saludables, para ayudar a tu cuerpo a equilibrarse.</p>
+				</div>
+			</div>
+			<div class="mySlides" style="display:none">
+				<div class="s3-item">
+					<img src="./img/1x/s3-1_1.png" alt="">
+					<h2>Bar Detox</h2>
+				</div>
+				<div class="s3-text">
+					<h2>Bar Detox</h2>
+					<p>Al tomar nuestros servicios de masaje, te ofrecemos un shot de jengibre de bienvenida, que te ayuda a activar y acelerar tu metabolismo a la vez que desinflama todos los músculos tensos.<br><br>
+
+						En Vitalí IntraSpa sabemos que somos lo que comemos y, precisamente por eso, para ayudar a tu cuerpo a alcanzar ese estado de bienestar óptimo, hemos diseñado el Bar Detox Vitalí, en el que te ofreceremos todo tipo de bebidas y snacks saludables, para ayudar a tu cuerpo a equilibrarse.</p>
+				</div>
+			</div>
+			<div class="mySlides" style="display:none">
+				<div class="s3-item">
+					<img src="./img/1x/s3-3.png" alt="">
+					<h2>Bar Detox</h2>
+				</div>
+				<div class="s3-text">
+					<h2>Bar Detox</h2>
+					<p>Al tomar nuestros servicios de masaje, te ofrecemos un shot de jengibre de bienvenida, que te ayuda a activar y acelerar tu metabolismo a la vez que desinflama todos los músculos tensos.<br><br>
+
+						En Vitalí IntraSpa sabemos que somos lo que comemos y, precisamente por eso, para ayudar a tu cuerpo a alcanzar ese estado de bienestar óptimo, hemos diseñado el Bar Detox Vitalí, en el que te ofreceremos todo tipo de bebidas y snacks saludables, para ayudar a tu cuerpo a equilibrarse.</p>
+				</div>
+			</div>
+			<div class="mySlides" style="display:none">
+				<div class="s3-item">
+					<img src="./img/1x/s3-4.png" alt="">
+					<h2>Bar Detox</h2>
+				</div>
+				<div class="s3-text">
+					<h2>Bar Detox</h2>
+					<p>Al tomar nuestros servicios de masaje, te ofrecemos un shot de jengibre de bienvenida, que te ayuda a activar y acelerar tu metabolismo a la vez que desinflama todos los músculos tensos.<br><br>
+
+						En Vitalí IntraSpa sabemos que somos lo que comemos y, precisamente por eso, para ayudar a tu cuerpo a alcanzar ese estado de bienestar óptimo, hemos diseñado el Bar Detox Vitalí, en el que te ofreceremos todo tipo de bebidas y snacks saludables, para ayudar a tu cuerpo a equilibrarse.</p>
+				</div>
+			</div>
+			<div class="mySlides" style="display:none">
+				<div class="s3-item">
+					<img src="./img/1x/s3-5.png" alt="">
+					<h2>Bar Detox</h2>
+				</div>
+				<div class="s3-text">
+					<h2>Bar Detox</h2>
+					<p>Al tomar nuestros servicios de masaje, te ofrecemos un shot de jengibre de bienvenida, que te ayuda a activar y acelerar tu metabolismo a la vez que desinflama todos los músculos tensos.<br><br>
+
+						En Vitalí IntraSpa sabemos que somos lo que comemos y, precisamente por eso, para ayudar a tu cuerpo a alcanzar ese estado de bienestar óptimo, hemos diseñado el Bar Detox Vitalí, en el que te ofreceremos todo tipo de bebidas y snacks saludables, para ayudar a tu cuerpo a equilibrarse.</p>
+				</div>
+			</div>
+		
+		  
+		</div>
+	</section>
+	
+	<section class="se-top">
+		<div class="servi-img">
+			<img src="./img/1x/sec3_top.png" alt="">
+		</div>
+	</section>
+	<section class="s3-section">
+		<div class="s3-section-img">
+			<img src="./img/1x/Mandala_Izquierda.png" alt="">
+		</div>
+		<div class="s3-section-content">
+			<div class="s3-section-content-text">
+				<p>
+					Precisamente, porque entendemos que nuestro bienestar depende de mucho más que un simple masaje o tratamiento, nuestro Spa cuenta con diferentes zonas, cada una de ellas pensada para ayudarte a alcanzar ese equilibrio único que sólo puedes alcanzar cuando mente, cuerpo y espíritu están en sintonía.<br><br>
+Entendemos tu individualidad, evitamos el sentido cotidiano de la masificación; por ello, cada vez que nos visites, tendrás en exclusiva el tiempo reservado para ti, y nuestro equipo experto de terapeutas se centrará en guiarte de manera única a lo largo de tu visita. 
+				</p>
+			</div>
+			<div class="s3-reserva-btn">
+				<button class="btn-reserva-3">Reserva ahora</button>
+			</div>
+		</div>
+		<div class="s3-section-img segundo">
+			<img src="./img/1x/Mandala_Derecha.png" alt="">
+		</div>
+	</section>
+	<section class="servicios-section margintop">
+		<div class="servi-img">
+			<img src="./img/1x/Nosotros-top.png" alt="">
+		</div>
+	</section>
+	<section class="servicios-section margin2">
+		<div class="servi-img">
+			<p>
+				Compartimos contigo nuestro conocimiento y experiencia para fomentar hábitos diarios que faciliten la reconexión con tu esencia y el transitar al camino del bien ser. 
+			</p>
+		</div>
+	</section>
+	
+	
+
+	<div class="nosotros_cards_contenedor">
+		<div class="nosotros_cards">
+			<div class="card">
+				<img src="img/1x/card1.png" alt="">
+				<h2>Expertos en bienestar</h2>
+				<p>En Vitalí, nos centramos en trabajar el equilibrio entre tu cuerpo físico, tu mente y tu espíritu, y de este modo ofrecerte una experiencia totalmente integral y única. Es precisamente por ello, por nuestra gran experiencia y punto de vista único del bienestar o wellness, que nos ha llevado a ser el Spa #1 en Trip Advisor</p>
+				<a href=""><img src="img/1x/btn-reserva.png" alt=""></a>
+			</div>
+			<div class="card">
+				<img src="img/1x/card2.png" alt="">
+				<h2>Experimenta, siente</h2>
+				<p>Vitalí IntraSpa trasciende la experiencia del spa en el que solo disfrutas el tiempo que dura tu sesión pues le hemos dado un giro de 180º a la experiencia temporal, para convertirlo en un espacio 100% integralmente dedicado a tu bienestar. </p>
+				<a href=""><img src="img/1x/btn-reserva.png" alt=""></a>
+			</div>
+			<div class="card">
+				<img src="img/1x/card3.png" alt="">
+				<h2>Nuestro proceso</h2>
+				<p>Nuestros servicios se enfocan en procesos que van desde lo más básico e interno, como la alimentación, hacia objetivos superiores, como una mejor calidad de vida. No somos un sitio que sólo ofrece masajes y tratamientos. En cada visita podrás realizar un recorrido único y enriquecedor para complementar tu masaje holístico.</p>
+				<a href=""><img src="img/1x/btn-reserva.png" alt=""></a>
+			</div>
+		</div>
+	</div>
+
+	<section class="servicios-section margintop">
+		<div class="servi-img">
+			<img src="./img/1x/reserva-top.png" alt="">
+		</div>
+	</section>
+	
+	<div class="swiper-container cuarto">
+		<div class="swiper-wrapper">
+		  <div class="swiper-slide cuarto_slide">
+			  <div class="cuarto_block">
+				  <h2>Masaje Relajante</h2>
+				  <p>Un Masaje Relajante es, por regla general, aplicado con maniobras suaves y delicadas. Los movimientos son suaves, armónicos y sin brusquedad, resultando agradables.</p>
+				  <div class="cuarto_info_item">
+					<div class="item">
+						<h3>Duración: 60 min.</h3>
+					</div>
+					<div class="item">
+						<h3>Costo: $1000.00 MN</h3>
+					</div>
+				  </div>
+				  <p>Extiende el beneﬁcio de tu visita mucho más allá de la recreación en un Spa Convencional.</p>
+				  <button>Reservar</button>
+			  </div>
+			  <div class="cuarto-block-image">
+				<img src="./img/1x/cuarto1.png" alt="">
+			  </div>
+		  </div>
+
+		  <div class="swiper-slide cuarto_slide">
+			<div class="cuarto_block">
+				<h2>Masaje Relajante</h2>
+				<p>Un Masaje Relajante es, por regla general, aplicado con maniobras suaves y delicadas. Los movimientos son suaves, armónicos y sin brusquedad, resultando agradables.</p>
+				<div class="cuarto_info_item">
+				  <div class="item">
+					  <h3>Duración: 60 min.</h3>
+				  </div>
+				  <div class="item">
+					  <h3>Costo: $1000.00 MN</h3>
+				  </div>
+				</div>
+				<p>Extiende el beneﬁcio de tu visita mucho más allá de la recreación en un Spa Convencional.</p>
+				<button>Reservar</button>
+			</div>
+			<div class="cuarto-block-image">
+			  <img src="./img/1x/cuarto1.png" alt="">
+			</div>
+		</div>
+		<div class="swiper-slide cuarto_slide">
+			<div class="cuarto_block">
+				<h2>Masaje Relajante</h2>
+				<p>Un Masaje Relajante es, por regla general, aplicado con maniobras suaves y delicadas. Los movimientos son suaves, armónicos y sin brusquedad, resultando agradables.</p>
+				<div class="cuarto_info_item">
+				  <div class="item">
+					  <h3>Duración: 60 min.</h3>
+				  </div>
+				  <div class="item">
+					  <h3>Costo: $1000.00 MN</h3>
+				  </div>
+				</div>
+				<p>Extiende el beneﬁcio de tu visita mucho más allá de la recreación en un Spa Convencional.</p>
+				<button>Reservar</button>
+			</div>
+			<div class="cuarto-block-image">
+			  <img src="./img/1x/cuarto1.png" alt="">
+			</div>
+		</div>
+		<div class="swiper-slide cuarto_slide">
+			<div class="cuarto_block">
+				<h2>Masaje Relajante</h2>
+				<p>Un Masaje Relajante es, por regla general, aplicado con maniobras suaves y delicadas. Los movimientos son suaves, armónicos y sin brusquedad, resultando agradables.</p>
+				<div class="cuarto_info_item">
+				  <div class="item">
+					  <h3>Duración: 60 min.</h3>
+				  </div>
+				  <div class="item">
+					  <h3>Costo: $1000.00 MN</h3>
+				  </div>
+				</div>
+				<p>Extiende el beneﬁcio de tu visita mucho más allá de la recreación en un Spa Convencional.</p>
+				<button>Reservar</button>
+			</div>
+			<div class="cuarto-block-image">
+			  <img src="./img/1x/cuarto1.png" alt="">
+			</div>
+		</div>
+		<div class="swiper-slide cuarto_slide">
+			<div class="cuarto_block">
+				<h2>Masaje Relajante</h2>
+				<p>Un Masaje Relajante es, por regla general, aplicado con maniobras suaves y delicadas. Los movimientos son suaves, armónicos y sin brusquedad, resultando agradables.</p>
+				<div class="cuarto_info_item">
+				  <div class="item">
+					  <h3>Duración: 60 min.</h3>
+				  </div>
+				  <div class="item">
+					  <h3>Costo: $1000.00 MN</h3>
+				  </div>
+				</div>
+				<p>Extiende el beneﬁcio de tu visita mucho más allá de la recreación en un Spa Convencional.</p>
+				<button>Reservar</button>
+			</div>
+			<div class="cuarto-block-image">
+			  <img src="./img/1x/cuarto1.png" alt="">
+			</div>
+		</div>
+		<div class="swiper-slide cuarto_slide">
+			<div class="cuarto_block">
+				<h2>Masaje Relajante</h2>
+				<p>Un Masaje Relajante es, por regla general, aplicado con maniobras suaves y delicadas. Los movimientos son suaves, armónicos y sin brusquedad, resultando agradables.</p>
+				<div class="cuarto_info_item">
+				  <div class="item">
+					  <h3>Duración: 60 min.</h3>
+				  </div>
+				  <div class="item">
+					  <h3>Costo: $1000.00 MN</h3>
+				  </div>
+				</div>
+				<p>Extiende el beneﬁcio de tu visita mucho más allá de la recreación en un Spa Convencional.</p>
+				<button>Reservar</button>
+			</div>
+			<div class="cuarto-block-image">
+			  <img src="./img/1x/cuarto1.png" alt="">
+			</div>
+		</div>
+		<div class="swiper-slide cuarto_slide">
+			<div class="cuarto_block">
+				<h2>Masaje Relajante</h2>
+				<p>Un Masaje Relajante es, por regla general, aplicado con maniobras suaves y delicadas. Los movimientos son suaves, armónicos y sin brusquedad, resultando agradables.</p>
+				<div class="cuarto_info_item">
+				  <div class="item">
+					  <h3>Duración: 60 min.</h3>
+				  </div>
+				  <div class="item">
+					  <h3>Costo: $1000.00 MN</h3>
+				  </div>
+				</div>
+				<p>Extiende el beneﬁcio de tu visita mucho más allá de la recreación en un Spa Convencional.</p>
+				<button>Reservar</button>
+			</div>
+			<div class="cuarto-block-image">
+			  <img src="./img/1x/cuarto1.png" alt="">
+			</div>
+		</div>
+		<div class="swiper-slide cuarto_slide">
+			<div class="cuarto_block">
+				<h2>Masaje Relajante</h2>
+				<p>Un Masaje Relajante es, por regla general, aplicado con maniobras suaves y delicadas. Los movimientos son suaves, armónicos y sin brusquedad, resultando agradables.</p>
+				<div class="cuarto_info_item">
+				  <div class="item">
+					  <h3>Duración: 60 min.</h3>
+				  </div>
+				  <div class="item">
+					  <h3>Costo: $1000.00 MN</h3>
+				  </div>
+				</div>
+				<p>Extiende el beneﬁcio de tu visita mucho más allá de la recreación en un Spa Convencional.</p>
+				<button>Reservar</button>
+			</div>
+			<div class="cuarto-block-image">
+			  <img src="./img/1x/cuarto1.png" alt="">
+			</div>
+		</div>
+		<div class="swiper-slide cuarto_slide">
+			<div class="cuarto_block">
+				<h2>Masaje Relajante</h2>
+				<p>Un Masaje Relajante es, por regla general, aplicado con maniobras suaves y delicadas. Los movimientos son suaves, armónicos y sin brusquedad, resultando agradables.</p>
+				<div class="cuarto_info_item">
+				  <div class="item">
+					  <h3>Duración: 60 min.</h3>
+				  </div>
+				  <div class="item">
+					  <h3>Costo: $1000.00 MN</h3>
+				  </div>
+				</div>
+				<p>Extiende el beneﬁcio de tu visita mucho más allá de la recreación en un Spa Convencional.</p>
+				<button>Reservar</button>
+			</div>
+			<div class="cuarto-block-image">
+			  <img src="./img/1x/cuarto1.png" alt="">
+			</div>
+		</div>
+		  
+		</div>
+		<!-- Add Pagination -->
+		<div class="swiper-pagination t4pag"></div>
+	</div>
+
+	<section class="servicios-section margintop showoff">
+		<div class="servi-img">
+			<img src="./img/1x/Lo-mejor-top.png" alt="">
+		</div>
+	</section>
+
+	<section class="slide4">
+		<div class="slide4-1">
+			<div class="image-container">
+				<img src="./img/1x/slide4-img1.png" alt="">
+			</div>
+			<div class="items-container">
+				<button class="btn-toActive" onclick="currentBlock(1)"><p>Masaje relajante<br>Orthopedic Surgen</p></button>
+				<button class="btn-toActive" onclick="currentBlock(2)"><p>Masaje relajante<br>Orthopedic Surgen</p></button>
+				<button class="btn-toActive" onclick="currentBlock(3)"><p>Masaje relajante<br>Orthopedic Surgen</p></button>
+				<button class="btn-toActive" onclick="currentBlock(4)"><p>Masaje relajante<br>Orthopedic Surgen</p></button>
+				<button class="btn-toActive" onclick="currentBlock(5)"><p>Masaje relajante<br>Orthopedic Surgen</p></button>
+			</div>
+			<div class="s3-reserva-btn margin3">
+				<button class="btn-reserva-3">Reserva ahora</button>
+			</div>
+			
+		</div>
+		<div class="slide4-2 changeImage">
+			<img src="./img/1x/Transparencia_4.png" alt="">
+		</div>
+		<div class="slide4-2 changeImage" style="display:none">
+			<img src="./img/1x/change2.png" alt="">
+		</div>
+		<div class="slide4-2 changeImage" style="display:none">
+			<img src="./img/1x/change3.png" alt="">
+		</div>
+		<div class="slide4-2 changeImage" style="display:none">
+			<img src="./img/1x/change4.png" alt="">
+		</div>
+		<div class="slide4-2 changeImage" style="display:none">
+			<img src="./img/1x/change5.png" alt="">
+		</div>
+		<div class="slide4-3 changeText">
+			<img src="./img/1x/slide4-3.png" alt="">
+			<p>Un Masaje Relajante 1 es, por regla general, aplicado con maniobras suaves y delicadas.
+
+				<br><br>Los movimientos son suaves, armónicos y sin brusquedad, resultando agradables.</p>
+		</div>
+		<div class="slide4-3 changeText" style="display:none">
+			<img src="./img/1x/slide4-3.png" alt="">
+			<p>Un Masaje Relajante 2 es, por regla general, aplicado con maniobras suaves y delicadas.
+
+				<br><br>Los movimientos son suaves, armónicos y sin brusquedad, resultando agradables.</p>
+		</div>
+		<div class="slide4-3 changeText" style="display:none">
+			<img src="./img/1x/slide4-3.png" alt="">
+			<p>Un Masaje Relajante 3 es, por regla general, aplicado con maniobras suaves y delicadas.
+
+				<br><br>Los movimientos son suaves, armónicos y sin brusquedad, resultando agradables.</p>
+		</div>
+		<div class="slide4-3 changeText" style="display:none">
+			<img src="./img/1x/slide4-3.png" alt="">
+			<p>Un Masaje Relajante 4 es, por regla general, aplicado con maniobras suaves y delicadas.
+
+				<br><br>Los movimientos son suaves, armónicos y sin brusquedad, resultando agradables.</p>
+		</div>
+		<div class="slide4-3 changeText" style="display:none">
+			<img src="./img/1x/slide4-3.png" alt="">
+			<p>Un Masaje Relajante 5 es, por regla general, aplicado con maniobras suaves y delicadas.
+
+				<br><br>Los movimientos son suaves, armónicos y sin brusquedad, resultando agradables.</p>
+		</div>
+	</section>
+
+	<section class="servicios-section margintop extra">
+		<div class="servi-img">
+			<img src="./img/1x/Instalaciones.png" alt="">
+		</div>
+	</section>
+
+	<section class="section-galeria">
+		<div class="item1">
+			<img src="./img/1x/Imagen_Galeria.png" alt="">
+		</div>
+		<div class="item2">
+			<img src="./img/1x/gallery-3.png" alt="">
+		</div>
+		<div class="item3">
+			<img src="./img/1x/gallery-2.png" alt="">
+		</div>
+		<div class="item4">
+			<img src="./img/1x/gallery-4.png" alt="">
+		</div>
+		
+	</section>
+
+	<section class="servicios-section margintop">
+		<div class="servi-img">
+			<img src="./img/1x/testimonios.png" alt="">
+		</div>
+	</section>
+
+	<div class="swiper-container quinto">
+		<div class="swiper-wrapper">
+		  <div class="swiper-slide quinto_slide" style="width: 100%;">
+			<div class="quinto_block">
+				<div class="test_item">
+					<div class="quinto_img_1">
+						<img src="img/1x/testi-user.png" alt="">
+					</div>
+					<h2>Relájate</h2>
+					<p>“¡Una experiencia super relajante! Reconozco la excelente atención de todos”.</p>
+					<h3>-CM Navarrete.</h3>
+				</div>
+				<div class="test_item">
+					<div class="quinto_img_1">
+						<img src="img/1x/testi-user.png" alt="">
+					</div>
+					<h2>¡Me encanta!</h2>
+					<p>“¡Me encanta ir a ese bello lugar, porque me consienten como a una reina!. El personal es muy amable y las chicas súper atentas. Yo lo recomiendo ampliamente, porque te consienten”.</p>
+					<h3>−Paolis Olalde</h3>
+				</div>
+			</div>
+		  </div>
+
+		  <div class="swiper-slide quinto_slide">
+			<div class="quinto_block">
+				<div class="test_item">
+					<div class="quinto_img_1">
+						<img src="img/1x/testi-user.png" alt="">
+					</div>
+					<h2>Relájate</h2>
+					<p>“¡Una experiencia super relajante! Reconozco la excelente atención de todos”.</p>
+					<h3>-CM Navarrete.</h3>
+				</div>
+				<div class="test_item">
+					<div class="quinto_img_1">
+						<img src="img/1x/testi-user.png" alt="">
+					</div>
+					<h2>¡Me encanta!</h2>
+					<p>“¡Me encanta ir a ese bello lugar, porque me consienten como a una reina!. El personal es muy amable y las chicas súper atentas. Yo lo recomiendo ampliamente, porque te consienten”.</p>
+					<h3>−Paolis Olalde</h3>
+				</div>
+			</div>
+		  </div>
+
+		</div>
+		<div class="swiper-button-next quinto_next"></div>
+		<div class="swiper-button-prev quinto_prev"></div>
+		<!-- Add Pagination -->
+		<div class="swiper-pagination t5pag"></div>
+	</div>
+
+	<div class="swiper-container quinto_mobile">
+		<div class="swiper-wrapper">
+		  <div class="swiper-slide quinto_slide">
+			<div class="quinto_block">
+				<div class="test_item">
+					<div class="quinto_img_1">
+						<img src="img/1x/testi-user.png" alt="">
+					</div>
+					<h2>Relájate</h2>
+					<p>“¡Una experiencia super relajante! Reconozco la excelente atención de todos”.</p>
+					<h3>-CM Navarrete.</h3>
+				</div>
+			</div>
+		  </div>
+
+		  <div class="swiper-slide quinto_slide">
+			<div class="quinto_block">
+				<div class="test_item">
+					<div class="quinto_img_1">
+						<img src="img/1x/testi-user.png" alt="">
+					</div>
+					<h2>¡Me encanta!</h2>
+					<p>“¡Me encanta ir a ese bello lugar, porque me consienten como a una reina!. El personal es muy amable y las chicas súper atentas. Yo lo recomiendo ampliamente, porque te consienten”.</p>
+					<h3>−Paolis Olalde</h3>
+				</div>
+			</div>
+		  </div>
+
+		  <div class="swiper-slide quinto_slide">
+			<div class="quinto_block">
+				<div class="test_item">
+					<div class="quinto_img_1">
+						<img src="img/1x/testi-user.png" alt="">
+					</div>
+					<h2>Relájate</h2>
+					<p>“¡Una experiencia super relajante! Reconozco la excelente atención de todos”.</p>
+					<h3>-CM Navarrete.</h3>
+				</div>
+			</div>
+		  </div>
+
+		  <div class="swiper-slide quinto_slide">
+			<div class="quinto_block">
+				<div class="test_item">
+					<div class="quinto_img_1">
+						<img src="img/1x/testi-user.png" alt="">
+					</div>
+					<h2>¡Me encanta!</h2>
+					<p>“¡Me encanta ir a ese bello lugar, porque me consienten como a una reina!. El personal es muy amable y las chicas súper atentas. Yo lo recomiendo ampliamente, porque te consienten”.</p>
+					<h3>−Paolis Olalde</h3>
+				</div>
+			</div>
+		  </div>
+
+		</div>
+		<div class="swiper-button-next quinto_mobile_next"></div>
+		<div class="swiper-button-prev quinto_mobile_prev"></div>
+		<!-- Add Pagination -->
+		<div class="swiper-pagination t5pag_mobile"></div>
+	</div>
+
+	<div class="promo">
+		<div class="promo_block">
+			<h2>Respira</h2>
+			<p>Entérate de nuestras promociones.</p>
+			<input type="text" placeholder="Inserta tu correo electrónico">
+			<button>Enviar</button>
+		</div>
+	</div>
+	<section class="servicios-section margintop extra1">
+		<div class="servi-img">
+			<img src="./img/1x/respira-linea.png" alt="">
+		</div>
+	</section>
+
+	<div class="contact">
+		<div class="contact_item">
+			<h2>Cuándo debes visitarnos</h2>
+			<span>∙ Fatiga constante.<br></span>
+			<span>∙ Estado de descontento prolongado.<br></span>  
+			<span>∙ Estrés.<br></span>  
+			<span>∙ Necesidad de reconexión personal.<br></span> 
+			<span>∙ Necesidad de reconexión personal.<br></span>
+			<span>∙ Búsqueda de tu <i>por qué.</i><br></span> 
+		</div>
+		<div class="contact_item">
+			<h2>Hora de atención</h2>
+			<h3>Lunes a Viernes</h3>
+			<span>10:00 - 20 h.</span>
+			<h3>Sábados</h3>
+			<span>10:00 - 19 h.</span>
+			<h3>Domingos </h3>
+			<span>10:00 - 18:00h.</span>
+		</div>
+		<div class="contact_item">
+			<h2>Contacto</h2>
+			<span>55 2974 6994<br></span>
+			<span>55 5211 6135<br></span>
+			<span>55 6425 3139<br></span>
+			<h3>contacto@vitalispa.com.mx</h3>
+			<button>Reserva</button>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="footer-1">
+			<p>contacto@vitalispa.com.mx</p>
+			<h3>Vitalí Spa®</h3>
+		</div>
+		<div class="footer-2">
+			<a href="#"><img src="./img/1x/facebook-icon.png" alt=""></a>
+			<a href="#"><img src="./img/1x/twitter-icon.png" alt=""></a>
+			<a href="#"><img src="./img/1x/whats-icon.png" alt=""></a>
+		</div>
+		<div class="footer-3">
+			<img src="./img/1x/vitali-footer.png" alt="">
+		</div>
+	</footer>
+
+	<script src="js/slide-script.js"></script>
+	<script src="js/slider2.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
