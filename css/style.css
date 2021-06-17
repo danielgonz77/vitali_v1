@@ -90,7 +90,7 @@ header nav{
 }
 
 .logo img{
-	width: 170px;
+	width: 150px;
 	height: 65px;
 }
 
@@ -137,7 +137,7 @@ header nav ul li a:hover{
 	position: relative;
 	top: 60px;
 	overflow: hidden;
-	
+	height: clamp(660px, 80vh, 900px);
 }
 .bienvenido, .slide3{
 	margin-top: clamp(4%, 5%, 13%);
@@ -181,7 +181,7 @@ header nav ul li a:hover{
 .reserva-section{
 	width: 100vw;
 	height: clamp(400px, 550px, 600px);
-	margin-top: 60px;
+	margin-top: 40px;
 	background-image: url('../img/1x/Transparencia_2.png');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -195,7 +195,7 @@ header nav ul li a:hover{
 	height: auto;
 	margin-top: clamp(50px, 12%, 200px);
 	display: grid;
-	grid-template-columns: 20% 62% 20%;
+	grid-template-columns: 20% 60% 20%;
 	grid-template-rows: 100%;
 }
 .s3-section-content{
@@ -209,11 +209,19 @@ header nav ul li a:hover{
 	width: 100%;
 
 }
-.s3-section-img img{
+.s3-section-img .izquierda{
 	width: 80%;
 	height: auto;
+	float: left;
 	/*background-color: antiquewhite;*/
 }
+.s3-section-img .derecha{
+	width: 80%;
+	height: auto;
+	float: right;
+	/*background-color: antiquewhite;*/
+}
+
 .s3-section-img:nth-child(1){
 	justify-content: left;
 }
@@ -224,7 +232,7 @@ header nav ul li a:hover{
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position-x: center;
-	height: 75%;
+	height: 100%;
 	color: white;
 	width: 100%;
 	margin-top: 5%;
@@ -238,10 +246,11 @@ header nav ul li a:hover{
 .reserva-text h2{
 	font-family: 'Rokkitt';
 	font-size: clamp(2em, 2vw, 3.2em);
+	font-weight: 600;
 }
 .reserva-text h3{
 	font-family: 'Raleway-Light';
-	font-size: clamp(1em, 1.8vw, 2.5em);
+	font-size: clamp(1em, 1.6vw, 2.5em);
 }
 .slide3{
 	display: flex;
@@ -264,7 +273,7 @@ header nav ul li a:hover{
 .slide3-content .mySlides{
 	display: flex;
 	width: 100%;
-	height: clamp(200px, 90%, 550px);
+	height: fit-content;
 	background-color: #493A32;
 	border-radius: 40px;
 }
@@ -274,24 +283,26 @@ header nav ul li a:hover{
 	vertical-align: middle;
 }
 .s3-item img{
-	margin-left: 25%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 50%;
 	margin-top: 10%;
-	width: 40%;
 }
 .s3-item h2{
-	margin-left: clamp(15px, 19%, 65px);
+	text-align: center;
 	color: white;
 	font-family: 'Rokkitt';
 	font-size: clamp(2em, 4vw, 3.2em);
 }
 .mySlides .s3-text{
 	width: 65%;
-	margin-left: 5%;
 	/*background-color: #008037;*/
 	color: white;
 	font-family: 'Raleway-Light';
 	font-size: clamp(1em, 1.4vw, 2em);
 	margin-top: clamp(35px, 3%, 50px);
+	margin-bottom: clamp(35px, 3%, 50px);
 }
 .mySlides .s3-text h2{
 	display: none;
@@ -307,6 +318,21 @@ header nav ul li a:hover{
 	height: 100px;
 	display: flex;
 	justify-content: center;
+	margin-top: 5%;
+}
+.servicios-section span{
+	display: block;
+	text-align: center;
+	padding-bottom: 10px;
+	font-family: "Rokkitt";
+	font-size: clamp(1em, 3.2vw, 10em);
+	color: #493A32;
+	font-weight: 600;
+}
+.servicios-section img{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
 }
 .extra1 .servi-img img{
 	width: 90%;
@@ -511,6 +537,7 @@ header nav ul li a:hover{
 	color: white;
 	font-family: 'Rokkitt';
 	font-size: clamp(2em, 4vw, 3.2em);
+	font-weight: 700;
 }
 
 .content-slide p{
@@ -527,8 +554,10 @@ header nav ul li a:hover{
 	background-color: #A2C439;
 	color: white;
 	font-family: 'Rokkitt';
-	font-size: clamp(1.3em, 1.5em, 2.5em);
+	font-size: clamp(1.3em, 1.7em, 2.5em);
 	border-radius: 25px;
+	border-style: none;
+	font-weight: 600;
 }
 .content-slide .btn-contacto{
 	width: clamp(150px, 40%, 300px);
@@ -538,22 +567,25 @@ header nav ul li a:hover{
 	background-color: white;
 	color: #A2C439;
 	font-family: 'Rokkitt';
-	font-size: clamp(1.3em, 1.5em, 2.5em);
+	font-size: clamp(1.3em, 1.7em, 2.5em);
 	border-radius: 25px;
 	border: 2px solid #A2C439;
+	font-weight: 600;
 }
 
 .reserva-btn .btn-reserva{
-	width: clamp(150px, 40%, 800px);
-	height: clamp(40px, 30%, 80px);
+	width: 40%;
 	margin-left: 30%;
-	/*margin-top: 3%;*/
+	margin-right: 30%;
+	height: fit-content;
 	background-color: #A2C439;
 	color: white;
 	font-family: 'Rokkitt';
-	font-size: clamp(1.3em, 1.5em, 2.5em);
+	font-size: clamp(1.3em, 1.7em, 2.5em);
 	border-radius: 25px;
 	padding: 10px;
+	font-weight: 600;
+	border-style: none;
 }
 .s3-reserva-btn{
 	display: flex;
@@ -564,29 +596,43 @@ header nav ul li a:hover{
 	display: none;
 }
 .s3-reserva-btn .btn-reserva-3{
-	width: clamp(150px, 40%, 200px);
-	height: clamp(40px, 100%, 200px);
+	width: 20%;
+	margin-left: 40%;
+	margin-right: 40%;
+	height: fit-content;
 	/*margin-top: 3%;*/
 	background-color: #A2C439;
 	color: white;
 	font-family: 'Rokkitt';
-	font-size: clamp(1em, 1.5em, 2.5em);
+	font-size: clamp(1.3em, 1.7em, 2.5em);
 	border-radius: 25px;
 	border-style: none;
+	font-weight: 600;
+	padding: 10px;
 }
 .reserva-btn .btn-contacto{
-	width: clamp(150px, 40%, 800px);
-	height: clamp(40px, 30%, 80px);
+	width: 40%;
 	margin-left: 30%;
+	margin-right: 30%;
+	height: fit-content;
 	/*margin-top: 3%;*/
 	background-color: white;
 	color: #A2C439;
 	font-family: 'Rokkitt';
-	font-size: clamp(1.3em, 1.5em, 2.5em);
+	font-size: clamp(1.3em, 1.7em, 2.5em);
 	border-radius: 25px;
 	border: 2px solid #A2C439;
 	padding: 10px;
+	font-weight: 600;
 }
+/*.reserva-btn .btn-reserva, .reserva-btn .btn-contacto{
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	border-style: none;
+	font-size: clamp(1.1em, 1.5em, 2.5em);
+	font-weight: 600;
+}*/
 .s3-section-content-text p{
 	padding-top: 5%;
 	text-align: center;
@@ -602,7 +648,7 @@ header nav ul li a:hover{
 	left:0;
 	top:0;
 	width: 100%;
-	height: 660px;
+	height: clamp(660px, 80vh, 900px);
 	margin-bottom: 30vh;
 	z-index:1; 
 	display:none;
@@ -632,7 +678,8 @@ header nav ul li a:hover{
 	color: white;
 	margin-left: 10%;
 	font-family: 'Rokkitt';
-	font-size: clamp(2em, 3vw, 3.2em);
+	font-size: clamp(1.3em, 1.7vw, 3.2em);
+	font-weight: 600;
 }
 .b-swiper-block p{
 	color: white;
@@ -1364,6 +1411,9 @@ header nav ul li a:hover{
 	.mujer1{
 		height: 50%;
 	}
+	.home-slider{
+		height: fit-content;
+	}
 	.home-slider .slide{
 		width: 100%;
 		height: 600px;
@@ -1555,6 +1605,9 @@ header nav ul li a:hover{
 	.home-slider .slide{
 		height: 470px;
 	}
+	.servicios-section{
+		margin-top: 10%;
+	}
 	.home-slider .swiper-slide .caption h1{
 		font-size: 19px;
 	}
@@ -1648,7 +1701,7 @@ header nav ul li a:hover{
 	.dropdown-menu-menu.active{
 		display: block;
 	}
-
+	
 	.home-slider .caption{
 		position: relative;
 		top: -190px;
@@ -1694,7 +1747,8 @@ header nav ul li a:hover{
 		color: #1D1D1B;
 		margin-left: 15%;
 		font-family: 'Rokkitt';
-		font-size: clamp(2em, 3vw, 3.2em);
+		font-size: clamp(1em, 1.9vw, 3.2em);
+		font-weight: 600;
 	}
 	.b-swiper-block p{
 		color: #1D1D1B;
@@ -1716,6 +1770,7 @@ header nav ul li a:hover{
 	.mySlides .s3-text{
 		width: 90%;
 		margin-top: 0;
+		margin-left: 10%;
 	}
 	.mySlides .s3-text h2{
 		display: block;
@@ -1723,9 +1778,6 @@ header nav ul li a:hover{
 	.slide3-content .mySlides{
 		width: 80%;
 		margin-left: 10%;
-	}
-	.reserva-btn .btn-reserva, .reserva-btn .btn-contacto{
-		margin-left: 20%;
 	}
 	.servicios-section .servi-img img{
 		width: 70%;
@@ -1955,6 +2007,44 @@ header nav ul li a:hover{
 	.swiper-slide .icon-slide-item{
 		width: 100%;
 	}
+	.content-slide .btn-reserva {
+		font-size: clamp(1.1em, 1.5em, 2.5em);
+		border-radius: 25px;
+		border-style: none;
+		font-weight: 600;
+	}
+	.content-slide .btn-contacto {
+		font-size: clamp(1.1em, 1.5em, 2.5em);
+		border-radius: 25px;
+		border: 2px solid #A2C439;
+		font-weight: 600;
+	}
+	.servicios-section{
+		margin-top: 5%;
+		height: 50px;
+	}
+	/*.content-slide .btn-reserva {
+		width: clamp(150px, 40%, 300px);
+		height: clamp(40px, 15%, 50px);
+		margin-left: 2%;
+		margin-top: 3%;
+		background-color: #A2C439;
+		color: white;
+		font-family: 'Rokkitt';
+		font-size: clamp(1.3em, 1.7em, 2.5em);
+		border-radius: 25px;
+		border-style: none;
+		font-weight: 600;
+	}*/
+
+	.reserva-btn .btn-reserva, .reserva-btn .btn-contacto{
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+		border-style: none;
+		font-size: clamp(1.1em, 1.5em, 2.5em);
+		font-weight: 600;
+	}
 	.home-slider .swiper-slide .caption{
 		text-align: center;
 		position: relative;
@@ -2086,7 +2176,7 @@ header nav ul li a:hover{
 		font-size: 35px;
 	}
 	.reserva-text h2 {
-		font-size: 1.5em;
+		font-size: 1.3em;
 	}
 	.test_item p{
 		font-size: 12px;
