@@ -1023,8 +1023,13 @@ header nav ul li a:hover{
 	columns: 3;
 	column-gap: 0px;
 }
+.card .relleno{
+	opacity: 0%;
+	padding: 0%;
+	margin-bottom: 30px;
+}
 .reserva_linea{
-	margin-top: -100px;
+	margin-top: 50px;
 }
 .testi_linea{
 	margin-top: 10%;
@@ -1471,6 +1476,9 @@ header nav ul li a:hover{
 	.promo_block{
 		width: 80%;
 		margin-left: 10%;
+	}
+	.card .relleno{
+		display: none;
 	}
 	
 }
